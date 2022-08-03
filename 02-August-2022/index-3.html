@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+    n1 <input type="text" name="n1" id="n1"> <br>
+
+    n2 <input type="text" name="n2" id="n2"><br>
+    <button onclick="fnc()">hello</button>    
+    <p id="h"></p>
+    <p id="a"></p>
+    <script>
+        // function fnc() {
+        //     alert("Hi how are you?");
+        //     document.getElementById("h").innerHTML = "hiii";
+        // }
+        // function fnc() {
+        //     var n1 = document.getElementById("n1").value;
+        //     var n2 = document.getElementById("n2").value;
+        //     // alert(isNaN(n1));
+        //     if(!isNaN(n1) && !isNaN(n2)){
+        //     n1 = Number(n1);
+        //     n2 = Number(n2);
+        //     document.getElementById("h").innerHTML = n1+n2;
+        //     }
+        //     else{
+        //         document.getElementById("h").innerHTML = "<span style= 'color:red'>please enter a numeric value</span>";
+        //     }
+        // }
+
+        // function fnc(){
+        //     let n1 = document.getElementById("n1").value;
+        //     if(n1 % 2 == 0)
+        //     {
+        //         document.getElementById("h").innerHTML = "Even Number";
+        //     }
+        //     else
+        //     {
+        //         document.getElementById("h").innerHTML ="Odd number";
+        //     }
+        // }
+
+        // function fnc(){
+        //     let n1 = document.getElementById("n1").value;
+
+        //     if(n1<=1)
+        //     {
+        //         document.getElementById("h").innerHTML = "False";
+        //     }
+
+        //     for(let i = 2; i < (n1/2); i++) {
+        //         if(n1 % i == 0)
+        //         {
+        //             document.getElementById("h").innerHTML = "Not Prime";
+        //         }
+        //         else
+        //         {
+        //             document.getElementById("h").innerHTML = "Prime";
+        //         }
+        //     }
+        // }
+
+        function fnc()
+        {
+            let n1 = document.getElementById("n1").value;
+            let n2 = document.getElementById("n2").value;
+            let n3 = Math.floor(n1/n2);
+            let Remaning = n1-(n3*n2);
+
+            document.getElementById("h").innerHTML ="Each member will get "+ n3 +" balls ";
+
+            document.getElementById("a").innerHTML ="Remaning balls are "+ Remaning; 
+        }
+    </script>
+</body>
+</html>
