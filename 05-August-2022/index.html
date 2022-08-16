@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo" ondblclick="myFunction(4,3)">here</p> -->
+    <pre id="oddNo"></pre>
+    <script>
+        // function myFunction(p1,p2) {
+        //     document.getElementById("demo").innerHTML = p1*p2;
+        // }
+
+        function isOdd(number) {
+            return number % 2!= 0;
+        }
+
+        function filter(numbers , fn) {
+            let result = [];
+            for( const number of numbers){
+                if(fn(number)){
+                    result.push(number);
+                }
+            }
+            return result;
+        }
+
+        let numbers = [1, 2, 4, 7 , 3 , 5 , 6];
+        let oddN = filter(numbers , isOdd);
+        document.getElementById("oddNo").innerHTML = oddN;
+    </script>
+</body>
+</html>

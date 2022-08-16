@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form validation</title>
+  </head>
+  <body>
+    <h1>Form Validation using RegExp</h1>
+
+    <script>
+      function check(myForm) {
+        if (myForm.myname.value == "" || myForm.myname.value == NULL) {
+          alert("Name is mendatory");
+          return false;
+        }
+
+        if (myForm.myphone.value == "" || myForm.myphone.value == NULL) {
+          alert("Phone number is mendatory");
+          return false;
+        } else {
+          return true;
+        }
+      }
+    </script>
+
+    <form
+      name="formValidate"
+      action="fromProcess.html"
+      method="get"
+      onsubmit="return check(formValidate)"
+    >
+      <p>Name: <input type="text" size="50" name="myname" /></p>
+      <p>Phone No: <input type="text" size="50" name="myphone" /></p>
+
+      <p>
+        <input type="submit" value="submit" />
+        <input type="reset" value="reset" />
+      </p>
+    </form>
+  </body>
+</html>
