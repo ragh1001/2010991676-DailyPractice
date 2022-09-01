@@ -1,0 +1,37 @@
+#id1{
+    text-align: center;
+}
+body{
+    background-color: rgb(214, 171, 255);
+    /* background-color: orange; */
+}
+
+#div1{
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+}
+
+#n1{
+    height: 28px;
+    width: 70%;
+}
+
+#div2{
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+}
+
+#div3{
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+}
+
+#btn1{
+    height: 32px;
+    width: 30%;
+    background-color: orangered;
+}
+
